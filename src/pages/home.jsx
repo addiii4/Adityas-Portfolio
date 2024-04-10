@@ -7,7 +7,7 @@ import Sky from '../models/sky';
 import Plane from '../models/plane'
 
 const Home = () => {
-  const [isRotating, setisRotating] = useState(false);
+  const [isRotating, setIsRotating] = useState(false);
   
   const adjustIslandForScreen = () => {
     let screenScale = null;
@@ -22,7 +22,21 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   }
 
+  const adjustPlaneForScreen = () => {
+    let screenScale, screenPosition;
+
+    if (window.innerWidth < 768) {
+      screenScale = [1.5, 1.5, 1.5];
+      screenPosition = [0, -1.5, 0];
+    } else {
+      screenScale = [3, 3, 3];
+      screenPosition = [0, -4, -4];
+    }
+    return [screenScale, screenPosition];
+  };
+
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreen();
+  const [planeScale, planePosition] = adjustPlaneForScreen();
 
   return (
     <section className="w-full h-screen relative">
@@ -49,9 +63,14 @@ const Home = () => {
             scale={islandScale}
             rotation={islandRotation}
             isRotating={isRotating}
-            setisRotating={setisRotating}
+            setIsRotating={setIsRotating}
           />
-          <Plane />
+          <Plane
+            planeScale={planeScale}
+            planePosition={planePosition}
+            rotation={[0, 20, 0]}
+            isRotating={isRotating}
+          />
         </Suspense>
       </Canvas>
     </section>
