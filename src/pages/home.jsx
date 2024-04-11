@@ -8,7 +8,8 @@ import Plane from '../models/plane'
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
-  
+  const [currentStage, setCurrentStage] = useState(1);
+
   const adjustIslandForScreen = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
@@ -64,12 +65,13 @@ const Home = () => {
             rotation={islandRotation}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
           />
           <Plane
+            isRotating={isRotating}
             planeScale={planeScale}
             planePosition={planePosition}
             rotation={[0, 20, 0]}
-            isRotating={isRotating}
           />
         </Suspense>
       </Canvas>
