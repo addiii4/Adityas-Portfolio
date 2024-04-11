@@ -4,7 +4,8 @@ import { useState, Suspense } from 'react';
 import Loader from '../components/loader';
 import Island from '../models/island';
 import Sky from '../models/sky';
-import Plane from '../models/plane'
+import Plane from '../models/plane';
+import HomeInfo from '../components/homeInfo';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -42,7 +43,7 @@ const Home = () => {
   return (
     <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-        POPUP
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${
