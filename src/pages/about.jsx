@@ -90,7 +90,7 @@ const About = () => {
                 <ul className="my-5 list-disc ml-5 space-y-2">
                   {education.points.map((point, index) => (
                     <li
-                      key={`experience-point-${index}`}
+                      key={`education-point-${index}`}
                       className="text-black-500/50 font-normal pl-1 text-sm"
                     >
                       {point}
