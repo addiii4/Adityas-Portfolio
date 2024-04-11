@@ -58,7 +58,9 @@ const Home = () => {
             groundColor="#000000"
             intensity={1}
           />
-          <Sky />
+          <Sky 
+          isRotating={isRotating}
+          />
           <Island
             position={islandPosition}
             scale={islandScale}
