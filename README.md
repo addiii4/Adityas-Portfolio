@@ -5,4 +5,5 @@ react
 js
 tailwindcss
 threejs - /fiber /drei /springthree(animations)
-sketchfab.com for 3d models - 
+sketchfab.com for 3d models 
+emailjs for email handling
