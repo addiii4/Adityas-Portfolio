@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { UQ, HG, farzi } from "../assets/images";
 import {
   AWS, vercel, python, py,
   car,
@@ -100,7 +100,7 @@ export const experiences = [
   {
     title: "Front End Developer",
     company_name: "HeyGuru",
-    icon: starbucks,
+    icon: HG,
     iconBg: "#accbe1",
     date: "February 2022 - December 2022",
     points: [
@@ -113,7 +113,7 @@ export const experiences = [
   {
     title: "Front End Intern",
     company_name: "Farzi Engineer",
-    icon: tesla,
+    icon: farzi,
     iconBg: "#fbc3bc",
     date: "December 2021 - Feb 2022",
     points: [
@@ -129,7 +129,7 @@ export const education = [
   {
     title: "Bachelor's of Software Engineering (Honors)",
     company_name: "The University of Queensland",
-    icon: meta,
+    icon: UQ,
     iconBg: "#a2d2ff",
     date: "Graduated July 2023",
     points: [

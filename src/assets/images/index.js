@@ -1,15 +1,9 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
-import logo from './logo.svg'
+import UQ from './UQ.png'
+import HG from './HGLogo.webp'
+import farzi from './farzi.jpeg'
 
 export {
-    hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
-    logo
+    HG,
+    UQ,
+    farzi
 }
