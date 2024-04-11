@@ -1,11 +1,10 @@
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-  AWS, c, java, vercel,
+  AWS, vercel, python, py,
   car,
   contact,
   css,
   estate,
-  express,
   git,
   github,
   html,
@@ -31,16 +30,6 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
-  {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
     imageUrl: github,
     name: "GitHub",
     type: "Version Control",
@@ -59,11 +48,6 @@ export const skills = [
     imageUrl: mongodb,
     name: "MongoDB",
     type: "Database",
-  },
-  {
-    imageUrl: java,
-    name: "Java",
-    type: "Programming",
   },
   {
     imageUrl: AWS,
@@ -91,11 +75,6 @@ export const skills = [
     type: "State Management",
   },
   {
-    imageUrl: c,
-    name: "C/C++",
-    type: "Programming",
-  },
-  {
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
@@ -109,6 +88,11 @@ export const skills = [
     imageUrl: vercel,
     name: "Vercel",
     type: "Web Hosting",
+  },
+  {
+    imageUrl: py,
+    name: "Python",
+    type: "Programming",
   },
 ];
 

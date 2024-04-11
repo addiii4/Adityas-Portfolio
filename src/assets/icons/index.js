@@ -26,8 +26,13 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import AWS from './AWS.svg'
+import vercel from './vercel.svg'
+import python from './python.svg'
+import py from './py.png'
 
 export {
+    AWS, vercel, python, py,
     css,
     express,
     git,
