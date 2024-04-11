@@ -98,7 +98,7 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Software Developer",
+    title: "Front End Developer",
     company_name: "HeyGuru",
     icon: starbucks,
     iconBg: "#accbe1",
@@ -111,7 +111,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Front End Developer",
+    title: "Front End Intern",
     company_name: "Farzi Engineer",
     icon: tesla,
     iconBg: "#fbc3bc",
@@ -123,6 +123,9 @@ export const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+];
+
+export const education = [
   {
     title: "Bachelor's of Software Engineering (Honors)",
     company_name: "The University of Queensland",
