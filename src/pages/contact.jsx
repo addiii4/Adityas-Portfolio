@@ -46,7 +46,6 @@ const Contact = () => {
             text: "Thank you for your message 😃",
             type: "success",
           });
-
           setTimeout(() => {
           hideAlert(false);
           setCurrentAnimation("idle");
@@ -61,7 +60,6 @@ const Contact = () => {
           setIsLoading(false);
           console.error(error);
           setCurrentAnimation("idle");
-
           showAlert({
             show: true,
             text: "I didn't receive your message 😢",
