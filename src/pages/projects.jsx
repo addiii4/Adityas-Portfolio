@@ -57,7 +57,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600"
                 >
-                  Live Link
+                  Project Link
                 </Link>
                 <img
                   src={arrow}
