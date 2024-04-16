@@ -130,7 +130,8 @@ export const education = [
     title: "Bachelor's of Software Engineering (Honors)",
     company_name: "The University of Queensland",
     icon: UQ,
-    iconBg: "#a2d2ff",
+    iconBg: "#482075",
+    iconBg: "",
     date: "Graduated July 2023",
     points: [
       "Attained a 25% merit-based scholarship offered by the University of Queensland, recognizing academic achievements and commitment to excellence.",
