@@ -1,6 +1,8 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber';
 import { useState, Suspense } from 'react';
+import { Analytics } from "@vercel/analytics/react";
+//import Toggle from "../toggle/toggle.jsx";
 import Loader from '../components/loader';
 import Island from '../models/island';
 import Sky from '../models/sky';
@@ -39,12 +41,13 @@ const Home = () => {
 
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreen();
   const [planeScale, planePosition] = adjustPlaneForScreen();
-
+  
   return (
     <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
+
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
@@ -59,9 +62,7 @@ const Home = () => {
             groundColor="#000000"
             intensity={1}
           />
-          <Sky 
-          isRotating={isRotating}
-          />
+          <Sky isRotating={isRotating} />
           <Island
             position={islandPosition}
             scale={islandScale}
@@ -78,6 +79,7 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
+      <Analytics />
     </section>
   );
 }
