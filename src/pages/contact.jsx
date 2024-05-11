@@ -74,6 +74,12 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex-col">
         <h1 className="head-text">Get in touch</h1>
+        <br />{" "}
+        <h3>
+          Email me at <span className="font-semibold"> adityacheema4@gmail.com </span>
+          <br />
+          or send an email through the form below -
+        </h3>
         <form
           ref={formRef}
           className="w-full flex flex-col gap-7 mt-14"
