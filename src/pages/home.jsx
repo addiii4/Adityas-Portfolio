@@ -1,13 +1,14 @@
-import React from 'react'
-import { Canvas } from '@react-three/fiber';
-import { useState, Suspense } from 'react';
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { useState, Suspense } from "react";
 import { Analytics } from "@vercel/analytics/react";
 //import Toggle from "../toggle/toggle.jsx";
-import Loader from '../components/loader';
-import Island from '../models/island';
-import Sky from '../models/sky';
-import Plane from '../models/plane';
-import HomeInfo from '../components/homeInfo';
+import Loader from "../components/loader";
+import Island from "../models/island";
+import Sky from "../models/sky";
+import Plane from "../models/plane";
+import HomeInfo from "../components/homeInfo";
+
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -18,13 +19,13 @@ const Home = () => {
     let screenPosition = [0, -6.5, -43];
     let rotation = [0.1, 4.7, 0];
 
-    if(window.innerWidth < 768) {
+    if (window.innerWidth < 768) {
       screenScale = [0.9, 0.9, 0.9];
     } else {
       screenScale = [1, 1, 1];
     }
     return [screenScale, screenPosition, rotation];
-  }
+  };
 
   const adjustPlaneForScreen = () => {
     let screenScale, screenPosition;
@@ -41,7 +42,7 @@ const Home = () => {
 
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreen();
   const [planeScale, planePosition] = adjustPlaneForScreen();
-  
+
   return (
     <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
@@ -79,9 +80,10 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
+      
       <Analytics />
     </section>
   );
-}
+};
 
-export default Home
+export default Home;
