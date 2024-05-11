@@ -45,11 +45,6 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
-  },
-  {
     imageUrl: AWS,
     name: "AWS",
     type: "Cloud",
@@ -68,11 +63,6 @@ export const skills = [
     imageUrl: react,
     name: "React",
     type: "Frontend",
-  },
-  {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
   },
   {
     imageUrl: tailwindcss,
