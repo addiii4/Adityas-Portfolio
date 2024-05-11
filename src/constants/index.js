@@ -88,7 +88,7 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Front End Developer",
+    title: "Software Developer",
     company_name: "HeyGuru",
     icon: HG,
     iconBg: "#accbe1",
@@ -101,7 +101,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Front End Intern",
+    title: "Software Development Intern",
     company_name: "Farzi Engineer",
     icon: farzi,
     iconBg: "#fbc3bc",
